@@ -130,8 +130,8 @@ menuItems.forEach((item, index) => {
     currentProductImg.src = choosenProduct.colors[0].img;
 
     // 4. Update the color circles
-    currentProductColors.forEach((color, i) => {
-      color.style.backgroundColor = choosenProduct.colors[i].code;
+    currentProductColors.forEach((color, index) => {
+      color.style.backgroundColor = choosenProduct.colors[index].code;
     });
   });
 });
@@ -141,4 +141,27 @@ currentProductColors.forEach((color, index) => {
   color.addEventListener("click", () => {
     currentProductImg.src = choosenProduct.colors[index].img;
   });
+});
+//product box  color
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
+  });
+});  
+//product button to make payments
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+productButton.addEventListener("click",()=>{
+  payment.style.display="flex";
+}); 
+
+close.addEventListener("click",() =>{
+  payment.style.display="none";
 });

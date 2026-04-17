@@ -1,3 +1,6 @@
+.html{
+    scroll-behavior: smooth;
+}
 /* General page styling */
 .body {
     font-family: 'Lato', sans-serif;
@@ -41,12 +44,34 @@
 }
 
 /* Special offer text with underline effect */
-.spanLimitedOffer {
+/*.spanLimitedOffer {
     font-size: 25px;
     border-bottom: 2px solid rgb(240, 16, 16);
     cursor: pointer;
+
+}*/
+.spanLimitedOffer {
+    font-size: 25px;
+    /* Starting color */
+    border-bottom: 3px solid green; 
+    cursor: pointer;
+    display: inline-block; /* Ensures the line only stays under the text */
+    
+    /* 6 seconds total: 2s Green + 2s Red + 2s Blue */
+    animation: border-blink 6s infinite;
 }
 
+@keyframes border-blink {
+    0%, 32% {
+        border-color: green;
+    }
+    33%, 65% {
+        border-color: red;
+    }
+    66%, 100% {
+        border-color: blue;
+    }
+}
 /* Bottom section of the navbar for menu links */
 .navBottom {
     display: flex;
@@ -138,7 +163,7 @@
 }
 
 /* Main Buy button positioning and styling */
-.buyButton {
+/*.buyButton {
     position: absolute;
     top: 85%;
     right: 5%;
@@ -149,12 +174,38 @@
     background-color:gold;
     z-index: 1;
     cursor: pointer;
+}*/
+.buyButton {
+    position: absolute;
+    color:white;
+    top: 85%;
+    right: 5%;
+    font-size: 30px;
+    font-weight: 600;
+    /* Starting color */
+    border-bottom: 3px solid rgb(15, 243, 15); 
+    cursor: pointer;
+    display: inline-block; /* Ensures the line only stays under the text */
+    
+    /* 6 seconds total: 2s Green + 2s Red + 2s Blue */
+    animation: background-color 15s infinite;
 }
 
+@keyframes background-color {
+    0%, 32% {
+        background-color: rgb(11, 245, 11);
+    }
+    33%, 65% {
+        background-color: rgb(234, 0, 255);
+    }
+    66%, 100% {
+        background-color: rgb(0, 140, 255);
+    }
+}
 /* Hover effect for the Buy button */
 .buyButton:hover {
     background-color: rgb(5, 53, 46);
-    color: rgb(11, 252, 83);
+    color: white;
 }
 
 /* Background color variations for specific slides */
@@ -306,4 +357,86 @@
 .productButton:hover{
     background-color: #66ff00;
     color: black;
+}
+/*payment container*/
+.payment{
+    width: 400px;
+    height: 400px;
+    background-color:#e9e4f7ce;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+-webkit-box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+-moz-box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+z-index: 12;
+   
+}
+/*pay Title*/
+.payTitle{
+    font-size: 13px;
+    color:fuchsia;
+
+}
+/*label */
+label{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(5, 6, 5);
+}
+.payInput{
+    padding: 1px;
+    margin: 10px 2px;
+    border: none;
+    border-bottom: 2px solid rgb(120, 119, 119);
+}
+.payInput::placeholder{
+    color:light rgb(245, 244, 244);
+}
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+    margin-right: 7px;
+}
+.cardInfo{
+    display: flex;
+    justify-content:space-between ;
+}
+.sm{
+    width: 70px;
+}
+.payButton{
+    position: absolute;
+    height:30px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color:rgb(47, 255, 78);
+    color: white;
+    border: none;
+    cursor: pointer;
+      box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+-webkit-box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+-moz-box-shadow: -1px 6px 6px 7px rgba(25,3,3,0.83);
+}
+.close{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    cursor: pointer;
 }

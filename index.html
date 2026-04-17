@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="navItem">
-          <div class="spanLimitedOffer">Limited Offer!</div>
+          <div class="spanLimitedOffer"><b>Limited Offer!</b></div>
         </div>
       </div>
       <div class="navBottom">
@@ -47,49 +47,64 @@
           <div class="slideBg"></div>
           <h1 class="sliderTitle">AIR FORCE <br />NEW <br />SEASON</h1>
           <div class="sliderPrice">$119</div>
+          <a href="#product">
           <button class="buyButton">BUY NOW!</button>
+          </a>
         </div>
         <div class="sliderItem">
           <img src="./img/brazer.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">BRAZER <br />NEW SEASON</h1>
           <div class="sliderPrice">$99</div>
-          <button class="buyButton">BUY NOW!</button>
+         <a href="#product"> 
+         <button class="buyButton">BUY NOW!</button>
+         </a>
         </div>
         <div class="sliderItem">
           <img src="./img/crater.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">CRATER<br />NEW SEASON</h1>
           <div class="sliderPrice">$105</div>
+         <a href="#product">
           <button class="buyButton">BUY NOW!</button>
+         </a>
         </div>
         <div class="sliderItem">
           <img src="./img/hippie.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">HIPPIE<br />NEW SEASON</h1>
           <div class="sliderPrice">$119</div>
-          <button class="buyButton">BUY NOW!</button>
+         <a href="#product"> 
+         <button class="buyButton">BUY NOW!</button>
+         </a>
         </div>
         <div class="sliderItem">
           <img src="./img/tennis.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">TENNIS<br />NEW SEASON</h1>
           <div class="sliderPrice">$119</div>
+          <a href="#product">
           <button class="buyButton">BUY NOW!</button>
+          </a>
+          
         </div>
         <div class="sliderItem">
           <img src="./img/sneaker.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">SNEAKERS<br />NEW SEASON</h1>
           <div class="sliderPrice">$119</div>
-          <button class="buyButton">BUY NOW!</button>
+         <a href="#product"> 
+         <button class="buyButton">BUY NOW!</button>
+         </a>
         </div>
         <div class="sliderItem">
           <img src="./img/jordan.png" alt="" class="sliderImage" />
           <div class="slideBg"></div>
           <h1 class="sliderTitle">JORDAN<br />NEW SEASON</h1>
           <div class="sliderPrice">$119</div>
+          <a href="#product">
           <button class="buyButton">BUY NOW!</button>
+          </a>
         </div>
       </div>
     </div>
@@ -97,34 +112,26 @@
       <div class="feature">
         <img src="img/shipping.png" alt="" class="featureIcon" /><br />
         <span class="featureTitle">FREE SHIPPING<br /></span>
-        <span class="featuresDescription"
-          >free worldwide shipping on all your orders</span
-        >
+        <span class="featuresDescription">free worldwide shipping on all your orders</span>
       </div>
       <div class="feauture">
         <img src="img/30 .png" alt="" class="featureIcon" /><br />
         <span class="featureTitle">30 DAYS RETURN<br /></span>
-        <span class="featuresDescription"
-          >No question return and easy refund in 14 days.</span
-        >
+        <span class="featuresDescription">No question return and easy refund in 14 days.</span>
       </div>
 
       <div class="feauture">
         <img src="img/gift.png" alt="" class="featureIcon" /><br />
         <span class="featureTitle">GIFT CARDS<br /></span>
-        <span class="featuresDescription"
-          >Buy gift card and use coupon codes easily</span
-        >
+        <span class="featuresDescription">Buy gift card and use coupon codes easily</span>
       </div>
       <div class="feauture">
         <img src="img/contact.webp" alt="" class="featureIcon" /><br />
         <span class="featureTitle">CONTACT US!<br /></span>
-        <span class="featuresDescription"
-          >Keep in touch via email and support system.</span
-        >
+        <span class="featuresDescription" >Keep in touch via email and support system.</span >
       </div>
     </div>
-    <div class="product">
+    <div class="product" id="product">
       <img src="img/airforce.png" alt="" class="productImg" />
       <div class="productDetails">
         <h1 class="productTitle">AIR FORCE</h1>
@@ -150,7 +157,29 @@
 
         <button class="productButton">BUY NOW!</button>
       </div>
+      <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" class="payInput" placeholder="Enter your name" />
+        <label>Phone Number</label>
+        <input type="text" class="payInput" placeholder="+254 123456789">
+        <label for="">Address</label>
+        <input type="text" placeholder="Nairobi 00100" class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+          <img src="img/visa.jpg" width="110" alt="card icon" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+          <input type="text" placeholder="mm" class="payInput sm">
+          <input type="text" placeholder="yyyy" class="payInput sm">
+          <input type="text" placeholder="cvv" class="payInput sm">
+        </div>
+        <button class="payButton">Check out!</button>
+        <span class="close">X</span>
     </div>
+      </div>
+      
     <script src="app.js"></script>
   </body>
 </html>
